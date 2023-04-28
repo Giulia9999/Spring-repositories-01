@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "2ec6d14e-4d65-4010-8c66-3ad114129dc3",
+		"name": "SpringRepo01",
+		"description": "# This is the collection 1\n\nYou can use it for tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26043911",
+		"_collection_link": "https://java-team-222.postman.co/workspace/PrimaProva~3b9dee89-b772-45b1-a248-a599dc586a41/collection/26043911-2ec6d14e-4d65-4010-8c66-3ad114129dc3?action=share&creator=26043911&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "GetCarsFromHal",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cars/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cars",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/hal+json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Apr 2023 16:59:49 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"modelName\": \"Tesla\",\n    \"serialNumber\": 1232374543,\n    \"currentPrice\": 12000,\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/cars/1\"\n        },\n        \"car\": {\n            \"href\": \"http://localhost:8080/cars/1\"\n        }\n    }\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cars/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cars",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/hal+json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Apr 2023 17:00:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"modelName\": \"Tesla\",\n    \"serialNumber\": 7467365,\n    \"currentPrice\": 12300,\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/cars/2\"\n        },\n        \"car\": {\n            \"href\": \"http://localhost:8080/cars/2\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GetAllCarsFromHal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cars{?page,size,sort}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars{"
+					],
+					"query": [
+						{
+							"key": "page,size,sort}",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetAllCarsFromHal",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/hal+json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Apr 2023 17:02:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_embedded\": {\n        \"cars\": [\n            {\n                \"modelName\": \"Tesla\",\n                \"serialNumber\": 1232374543,\n                \"currentPrice\": 12000,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/cars/1\"\n                    },\n                    \"car\": {\n                        \"href\": \"http://localhost:8080/cars/1\"\n                    }\n                }\n            },\n            {\n                \"modelName\": \"Tesla\",\n                \"serialNumber\": 7467365,\n                \"currentPrice\": 12300,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/cars/2\"\n                    },\n                    \"car\": {\n                        \"href\": \"http://localhost:8080/cars/2\"\n                    }\n                }\n            }\n        ]\n    },\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/cars\"\n        },\n        \"profile\": {\n            \"href\": \"http://localhost:8080/profile/cars\"\n        }\n    },\n    \"page\": {\n        \"size\": 20,\n        \"totalElements\": 2,\n        \"totalPages\": 1,\n        \"number\": 0\n    }\n}"
+				}
+			]
+		}
+	]
+}
